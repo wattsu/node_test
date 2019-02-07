@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>DB接続</title>
+    <style type="text/css">
+      .div_block { width: 300px; display: inline-block; vertical-align: top;
+                   margin: 5px; border: 1px solid #555; }
+      .div_header { background-color: #CCC; padding: 10px;
+                    height: 26px; font-size: 12px;}
+      img { object-fit: cover; width: 300px; height: 160px; display:block;}
+      .nodata { width: 300px; height: 160px; background-color: #EEE;}
+      p { padding: 5px; font-size: 10px; display: block; height: 60px;}
+    </style>
+  </head>
+  <body>
+
+    <%# ヘッダー %>
+    <h1>アイテム一覧</h1>
+    <% for (item of items) { %>
+      <div class="div_block">
+        <div class="div_header">
+        </div>
+        <% if (!!item) { %>
+          <div><%= item %></div>
+        <% } else { %>
+          <div class="nodata">nodata</div>
+        <% } %>  
+
+      </div>
+    <% } %>
+  </body>
+</html>
