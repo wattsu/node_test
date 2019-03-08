@@ -10,3 +10,6 @@ node.jsでMySQLのecスキーマにアクセスし、m_itemsテーブルの値�
 
 【環境補足】
 要MySQL
+
+【実装工数】
+2h
